@@ -321,9 +321,9 @@ actCalendar.prototype.getMonthHtml=function(){
 		if(type==="prev"){
 			return _this.month===0?(_this.year-1)+"-12-":_this.year+"-"+(_this.month)+"-";
 		}else if(type==="next"){
-			return _this.month===11?(_this.year*1+1)+"-1-":_this.year+"-"+(_this.month+2)+"-";
+			return _this.month===11?(_this.year*1+1)+"-1-":_this.year+"-"+(_this.month*1+2)+"-";
 		}else{
-			return _this.year+"-"+(_this.month+1)+"-";
+			return _this.year+"-"+(_this.month*1+1)+"-";
 		}
 
 	}
